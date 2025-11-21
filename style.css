@@ -1,0 +1,283 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+.entete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    height: 70px;
+}
+.titre{
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman';
+}
+.lien{
+    display: flex;
+    gap: 30px;
+}
+.lien a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman';
+}
+.lien a:hover{
+    text-decoration: underline orange;
+    color: rgb(248, 124, 41);
+    transition: all 0.5s;
+}
+.button button{
+    background-color: rgb(248, 124, 41);
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman';
+    height: 40px;
+    width: 150%;
+}
+.centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: linear-gradient(rgba(24, 2, 2, 0.668), rgba(20, 17, 17, 0.668)),url(img/5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.centre .infos h4{
+    font-size: 15px;
+    color: white;
+    font-family: Georgia, 'Times New Roman';
+    margin-left: 80px;
+}
+.centre .infos h1{
+    font-size: 50px;
+    color: rgb(248, 124, 41);
+    font-family: Georgia, 'Times New Roman';
+
+}
+.centre .infos span{
+    margin-right: 50px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+
+}
+.btn button{
+    height: 40px;
+    width: 120px;
+    border-radius: 100px;
+    background-color: rgba(255, 203, 32, 0.74);
+    backdrop-filter: blur(200px);
+    border: none;
+    cursor: pointer;
+}
+.btn button:hover{
+    background-color:rgba(255, 203, 32, 0.918) ;
+    box-shadow: rgba(255, 203, 32, 0.918) 0px 7px 29px 0px;
+}
+.menu h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu .images{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    gap: 50px;
+}
+.menu .images .photo img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+.menu .images .photo img:hover{
+    transform:scaleX(1.2) scaleY(1.2);
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.menu .images .photo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu .images .photo span{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman';
+}
+.banderolle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: linear-gradient(rgba(24, 2, 2, 0.267), rgba(20, 17, 17, 0.301)),url(img/10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.ecrit p{
+    font-size: 18px;
+    color: rgb(75, 75, 75);
+    font-family: Georgia, 'Times New Roman';
+}
+.ecrit button{
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: rgb(253, 142, 67);
+    border: none;
+    cursor: pointer;
+}
+.ecrit button:hover{
+    background-color: rgb(248, 99, 0);
+    box-shadow: rgb(255, 134, 53) 0px 7px 29px 0px;
+    transition: all 0.5s;
+}
+.spring{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    gap: 50px;
+}
+.spring .img img{
+    height: 250px;
+    width: 300px;
+    border-radius: 20%;
+}
+.spring .img img:hover{
+    transform:scaleX(1.1) scaleY(1.1);
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .entete{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 10px;
+        height: auto;
+    }
+    .lien{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .button button{
+        width: 100%;
+    }
+    .centre{
+        height: auto;
+        padding: 20px;
+    }
+    .centre .infos h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .centre .infos h4{
+        font-size: 12px;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .btn{
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    .menu .images{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        gap: 20px;
+    }
+    .menu .images .photo img{
+        height: 200px;
+        width: 200px;
+    }
+    .banderolle{
+        height: auto;
+        padding: 20px;
+    }
+    .spring{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        gap: 40px;
+        padding: 20px;
+    }
+    .spring .img img{
+        height: 150px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .entete{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 10px;
+        height: auto;
+    }
+    .lien{
+        font-size: 5px;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .button button{
+        width: 100%;
+    }
+    .centre{
+        height: auto;
+        padding: 20px;
+    }
+    .centre .infos h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .centre .infos h4{
+        font-size: 12px;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .btn{
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    .menu .images{
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+    .menu .images .photo img{
+        height: 200px;
+        width: 200px;
+    }
+    .banderolle{
+        height: auto;
+        padding: 20px;
+    }
+    .spring{
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+    .spring .img img{
+        height: 200px;
+        width: 250px;
+    }
+}
